@@ -3,4 +3,7 @@ import { NativeModules } from 'react-native';
 
 const { RNAppSignatureHelper } = NativeModules;
 
-export default RNAppSignatureHelper;
+export default {
+    getAppSignature: RNAppSignatureHelper.getAppSignatures,
+    getAppSignatures: RNAppSignatureHelper.getAppSignatures
+};
