@@ -30,7 +30,7 @@ public class RNAppSignatureHelperModule extends ReactContextBaseJavaModule {
             String[] stringArray = list.toArray(new String[0]);
             WritableArray promiseArray=Arguments.createArray();
             for(int i=0;i<stringArray.length;i++){
-                promiseArray.pushString(list[i]);
+                promiseArray.pushString(stringArray[i]);
             }
             promise.resolve(promiseArray);
         }
