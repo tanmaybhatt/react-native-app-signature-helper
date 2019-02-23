@@ -27,7 +27,12 @@ public class RNAppSignatureHelperModule extends ReactContextBaseJavaModule {
         try {
             AppSignatureHelper mAppSignatureHelper = new AppSignatureHelper(reactContext);
             ArrayList<String> list = mAppSignatureHelper.getAppSignatures();
-            promise.resolve(list);
+            String[] stringArray = list.toArray(new String[0]);
+            WritableArray promiseArray=Arguments.createArray();
+            for(int i=0;i<stringArray.length;i++){
+                promiseArray.pushString(list[i]);
+            }
+            promise.resolve(promiseArray);
         }
         catch (Error e) {
             promise.reject(e);
