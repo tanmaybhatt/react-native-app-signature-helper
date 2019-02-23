@@ -32,7 +32,6 @@
 ```javascript
 import RNAppSignatureHelper from 'react-native-app-signature-helper';
 
-// TODO: What to do with the module?
 RNAppSignatureHelper.getAppSignature().then(function(hashedAppSignature) {
 	console.log(hashedAppSignature);
 })
