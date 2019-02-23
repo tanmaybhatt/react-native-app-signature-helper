@@ -5,7 +5,7 @@
 
 `$ npm install react-native-app-signature-helper --save`
 
-### Mostly automatic installation
+### Automatic installation
 
 `$ react-native link react-native-app-signature-helper`
 
@@ -33,6 +33,8 @@
 import RNAppSignatureHelper from 'react-native-app-signature-helper';
 
 // TODO: What to do with the module?
-RNAppSignatureHelper;
+RNAppSignatureHelper.getAppSignature().then(function(hashedAppSignature) {
+	console.log(hashedAppSignature);
+})
 ```
   
