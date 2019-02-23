@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.rnappsignaturehelper;
 
 import android.content.Context;
 import android.content.ContextWrapper;
