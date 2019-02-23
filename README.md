@@ -1,6 +1,8 @@
 
 # react-native-app-signature-helper
 
+React Native wrapper for AppSignatureHelper. AppSignatureHelper can be used for [Computing your app's hash string](https://developers.google.com/identity/sms-retriever/verify) which is required in [SMS Retriever API](https://developers.google.com/identity/sms-retriever/).
+
 ## Getting started
 
 `$ npm install react-native-app-signature-helper --save`
