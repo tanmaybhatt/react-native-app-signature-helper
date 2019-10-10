@@ -16,8 +16,8 @@ React Native wrapper for AppSignatureHelper. AppSignatureHelper can be used for 
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNAppSignatureHelperPackage;` to the imports at the top of the file
+1. Open up `android/app/src/main/java/[...]/MainApplication.java
+  - Add `import com.rnappsignaturehelper.RNAppSignatureHelperPackage;` to the imports at the top of the file
   - Add `new RNAppSignatureHelperPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
